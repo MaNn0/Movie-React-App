@@ -1,0 +1,19 @@
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+body {
+  text-align: center;
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+
+#example2 {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
+}
