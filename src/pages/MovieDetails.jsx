@@ -17,7 +17,6 @@ export default function MovieDetails() {
     }, [id])
     return (
         <Container className="con">
-
             {movie &&
                 <div className="d-flex justify-content-between">
                     <div className="">

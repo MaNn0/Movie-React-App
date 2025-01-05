@@ -5,7 +5,7 @@ a {
 }
 
 body {
-  text-align: center;
+  /* text-align: center; */
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
@@ -16,4 +16,30 @@ body {
   border: 1px solid;
   padding: 10px;
   box-shadow: 5px 10px #888888;
+}
+.favorite-icon {
+  font-size: 1.5rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px; /* For smooth rounded edges */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.image-container:hover {
+  transform: translateY(-5px) scale(1.05); /* Lift and zoom in */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+.image-hover {
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  height: auto;
+}
+
+.image-hover:hover {
+  transform: scale(1.1); /* Zoom the image slightly on hover */
 }
