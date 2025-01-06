@@ -33,14 +33,14 @@ export default function MovieCard(props) {
             </Link>
             <Card.Body>
                 <Card.Title>{props.film.title}</Card.Title>
-                <span className="text-center">Rating: {props.film.vote_average}/10</span>
-                <div className="icon-container" style={{ textAlign: 'right', marginTop: '10px' }}>
+                <span className="d-flex justify-content-between text-center">Rating: {props.film.vote_average}/10
                     <FontAwesomeIcon
+                        className='fs-3 '
                         icon={love.find((m) => m.id === props.film.id) ? faSolidHeart : faRegularHeart}
                         style={{ color: love.find((m) => m.id === props.film.id) ? "#e01b24" : "gray", cursor: 'pointer' }}
-                        onClick={handleHeartClick} // Call the handler on click
-                    />
-                </div>
+                        onClick={handleHeartClick}
+                    /></span>
+
             </Card.Body>
         </Card>
     );
