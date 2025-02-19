@@ -16,7 +16,7 @@ export default function Navbar() {
                     </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Link className="nav-link text-black" to="/Movielist">
+                    <Link className="nav-link text-black" to="/">
                         Movielist
                     </Link>
                 </Nav.Item>

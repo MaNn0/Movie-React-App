@@ -33,7 +33,7 @@ export default function App() {
             </Placeholder>
           </>}>
             <Routes>
-              <Route path='/Movielist' element={<Movielist />} />
+              <Route path='/' element={<Movielist />} />
               <Route path='/MovieDetails/:id' element={<MovieDetails />} />
               <Route path='/Watchlist' element={<Watchlist />} />
               <Route path='/Register' element={<Register />} />
