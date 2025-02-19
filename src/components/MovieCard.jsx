@@ -22,7 +22,7 @@ export default function MovieCard(props) {
     return (
         <Card id="example2" className="cardHov" style={{ width: '18rem', marginBottom: '30px' }}>
             <Link to={`/MovieDetails/${props.film.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
-                <div className="image-container">
+                <div className="image-container ">
                     <Card.Img
                         variant="top"
                         src={`https://image.tmdb.org/t/p/w500${props.film.poster_path}`}

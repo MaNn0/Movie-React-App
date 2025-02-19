@@ -12,12 +12,23 @@ export default function Navbar() {
             <Nav className="bg-warning py-3" justify variant="tabs" defaultActiveKey="/home">
                 <Nav.Item>
                     <Nav.Link className="text-black fw-bold" disabled>
-                        Mano 🎬
+                        ManoDB 🎬
                     </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
+                    <Link className="nav-link text-black" to="/Movielist">
+                        Movielist
+                    </Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Link className="nav-link text-black" to="/Watchlist">
+                        Watchlist
+                        <span className="bg-black ms-2  text-white p-1"> {love.length}</span>
+                    </Link>
+                </Nav.Item>
+                <Nav.Item>
                     <Dropdown>
-                        <Dropdown.Toggle variant="success" id="dropdown-basic">
+                        <Dropdown.Toggle variant="" id="dropdown-basic">
                             {Language}
                         </Dropdown.Toggle>
                         <Dropdown.Menu>
@@ -27,19 +38,8 @@ export default function Navbar() {
                     </Dropdown>
                 </Nav.Item>
                 <Nav.Item>
-                    <Link className="nav-link text-black" to="/Movielist">
-                        Movielist
-                    </Link>
-                </Nav.Item>
-                <Nav.Item>
                     <Link className="nav-link text-black" to="/Register">
                         Register
-                    </Link>
-                </Nav.Item>
-                <Nav.Item>
-                    <Link className="nav-link text-black" to="/Watchlist">
-                        Watchlist
-                        <span className="bg-black ms-2  text-white p-1"> {love.length}</span>
                     </Link>
                 </Nav.Item>
             </Nav>

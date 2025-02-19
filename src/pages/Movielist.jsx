@@ -25,12 +25,16 @@ export default function Movielist() {
     }
     useEffect(() => {
         instance
-            .get()
+            .get("/movie/popular")
             .then((res) => {
-                setMovies(res.data.results)
-                setSelectedMovie(res.data.results)
-            });
-    }, [])
+                console.log("API Response:", res.data); // Debugging
+                setMovies(res.data.results);
+                setSelectedMovie(res.data.results);
+            })
+            .catch((error) => console.error("Error fetching movies:", error));
+    }, []);
+
+    // console.log('mano');
 
     return (
         <Container className="con">
